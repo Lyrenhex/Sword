@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sword Word Processor", "Tword Word Processor\Sword Word Processor.vbproj", "{BD6A0907-4F8A-45BB-96A0-B67DCF30AB9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6AF5CAED-8C92-49CF-973F-D94CF0D5D614}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD6A0907-4F8A-45BB-96A0-B67DCF30AB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6A0907-4F8A-45BB-96A0-B67DCF30AB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6A0907-4F8A-45BB-96A0-B67DCF30AB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6A0907-4F8A-45BB-96A0-B67DCF30AB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
