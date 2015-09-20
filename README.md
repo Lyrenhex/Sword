@@ -1,2 +1,4 @@
 # Sword
-An open-source VB.NET Word Processor.
+An open-source VB.Net Word Processor.
+
+Sword is distributed under the GNU GPL v3.
