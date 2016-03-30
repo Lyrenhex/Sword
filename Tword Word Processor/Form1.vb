@@ -197,10 +197,6 @@ Public Class Form1
         MsgBox("Switched Dictionary to American English.", MsgBoxStyle.Information)
     End Sub
 
-    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        About.Show()
-    End Sub
-
     Private Sub UndoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UndoToolStripMenuItem.Click
         txtInput.Undo()
     End Sub

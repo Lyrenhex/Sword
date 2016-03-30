@@ -51,7 +51,6 @@ Partial Class Form1
         Me.FormatToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EULAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContactUsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SpellCheckToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -276,33 +275,27 @@ Partial Class Form1
         'FontToolStripMenuItem
         '
         Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
-        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
+        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FontToolStripMenuItem.Text = "Font"
         '
         'HelpToolStripMenuItem
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem, Me.EULAToolStripMenuItem, Me.ContactUsToolStripMenuItem})
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EULAToolStripMenuItem, Me.ContactUsToolStripMenuItem})
         Me.HelpToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
-        Me.AboutToolStripMenuItem.Text = "About"
-        '
         'EULAToolStripMenuItem
         '
         Me.EULAToolStripMenuItem.Name = "EULAToolStripMenuItem"
-        Me.EULAToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
+        Me.EULAToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.EULAToolStripMenuItem.Text = "EULA"
         '
         'ContactUsToolStripMenuItem
         '
         Me.ContactUsToolStripMenuItem.Name = "ContactUsToolStripMenuItem"
-        Me.ContactUsToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
+        Me.ContactUsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ContactUsToolStripMenuItem.Text = "Contact Us"
         '
         'SpellCheckToolStripMenuItem1
@@ -578,7 +571,7 @@ Partial Class Form1
         '
         Me.btnPrintComp.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnPrintComp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPrintComp.Font = New System.Drawing.Font("Ubuntu", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrintComp.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrintComp.Location = New System.Drawing.Point(0, 0)
         Me.btnPrintComp.Name = "btnPrintComp"
         Me.btnPrintComp.Size = New System.Drawing.Size(648, 457)
@@ -615,7 +608,6 @@ Partial Class Form1
     Friend WithEvents EditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FormatToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SpellCheckToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CheckToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AddSelectionToDictionaryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

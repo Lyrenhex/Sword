@@ -59,7 +59,7 @@ ByVal filename As String)
             txtContent.SaveFile(SaveDialog.FileName)
             Me.Text = "Sword Word Processor - " & SaveDialog.FileName
         Catch ex As Exception
-            SaveDialog.Filter = "Sword Document|*.sdc|Tword Document|*.twd|Microsoft Word Document 97 - 2003|*.doc|Rich Text File Format|*.rtf|All File Types|*.*"
+            SaveDialog.Filter = "Sword Document|*.sdc|Microsoft Word Document 97 - 2003|*.doc|Rich Text File Format|*.rtf|All File Types|*.*"
             SaveDialog.FilterIndex = 1
             SaveDialog.ShowDialog()
             Try
@@ -71,12 +71,12 @@ ByVal filename As String)
     End Sub
 
     Private Sub Button39_Click(sender As Object, e As EventArgs) Handles Button39.Click
-        SaveDialog.Filter = "Sword Document|*.sdc|Tword Document|*.twd|Microsoft Word Document 97 - 2003|*.doc|Rich Text File Format|*.rtf|All File Types|*.*"
+        SaveDialog.Filter = "Sword Document|*.sdc|Microsoft Word Document 97 - 2003|*.doc|Rich Text File Format|*.rtf|All File Types|*.*"
         SaveDialog.FilterIndex = 1
         SaveDialog.ShowDialog()
         Try
             txtContent.SaveFile(SaveDialog.FileName)
-            Me.Text = "Tword Word Processor - " & SaveDialog.FileName
+            Me.Text = "Sword Word Processor - " & SaveDialog.FileName
         Catch ex2 As Exception
         End Try
     End Sub
@@ -87,7 +87,7 @@ ByVal filename As String)
         OpenDialog.ShowDialog()
         Try
             txtContent.LoadFile(OpenDialog.FileName)
-            Me.Text = "Tword Word Processor - " & OpenDialog.FileName
+            Me.Text = "Sword Word Processor - " & OpenDialog.FileName
         Catch ex2 As Exception
             MsgBox(ex2.ToString())
         End Try
@@ -249,7 +249,7 @@ ByVal filename As String)
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
-        Dim url As String = InputBox("Website address of image? (Direct - such as http://www.icronium.com/favicon2.png)")
+        Dim url As String = InputBox("Website address of image? (Direct - such as http://www.example.com/cat-image.jpg)")
         SaveDialog.ShowDialog()
         Try
             My.Computer.Network.DownloadFile(url, SaveDialog.FileName)
