@@ -1,2 +1,2 @@
 language: csharp
-solution: Sword Word Processor.sln
+solution: "Sword Word Processor.sln"
