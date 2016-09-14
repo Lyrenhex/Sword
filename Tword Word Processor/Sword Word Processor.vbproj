@@ -281,9 +281,6 @@
     <Content Include="twd3.ico" />
     <Content Include="twd4.ico" />
     <Content Include="twd5.ico" />
-    <Content Include="welcome.twd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Hunspellx64.dll">

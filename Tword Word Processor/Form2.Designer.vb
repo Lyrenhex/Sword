@@ -109,6 +109,8 @@ Partial Class Form2
         Me.btnWebImg = New MaterialSkin.Controls.MaterialFlatButton()
         Me.btnImg = New MaterialSkin.Controls.MaterialFlatButton()
         Me.btnTable = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.tabPSettings = New System.Windows.Forms.TabPage()
+        Me.chkIndent = New MaterialSkin.Controls.MaterialCheckBox()
         Me.tabPHelp = New System.Windows.Forms.TabPage()
         Me.btnEULA = New MaterialSkin.Controls.MaterialFlatButton()
         Me.tabPRev = New System.Windows.Forms.TabPage()
@@ -117,12 +119,10 @@ Partial Class Form2
         Me.btnDict = New MaterialSkin.Controls.MaterialFlatButton()
         Me.btnCheckSpell = New MaterialSkin.Controls.MaterialFlatButton()
         Me.tabPPrint = New System.Windows.Forms.TabPage()
-        Me.tabSelFile = New MaterialSkin.Controls.MaterialTabSelector()
-        Me.btnPrint = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.btnPreview = New MaterialSkin.Controls.MaterialFlatButton()
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
-        Me.tabPSettings = New System.Windows.Forms.TabPage()
-        Me.chkIndent = New MaterialSkin.Controls.MaterialCheckBox()
+        Me.btnPreview = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnPrint = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.tabSelFile = New MaterialSkin.Controls.MaterialTabSelector()
         Me.tacNav.SuspendLayout()
         Me.tabFile.SuspendLayout()
         Me.tabHome.SuspendLayout()
@@ -137,10 +137,10 @@ Partial Class Form2
         Me.tabPFile.SuspendLayout()
         Me.tabPHome.SuspendLayout()
         Me.tabPIns.SuspendLayout()
+        Me.tabPSettings.SuspendLayout()
         Me.tabPHelp.SuspendLayout()
         Me.tabPRev.SuspendLayout()
         Me.tabPPrint.SuspendLayout()
-        Me.tabPSettings.SuspendLayout()
         Me.SuspendLayout()
         '
         'tacNav
@@ -839,11 +839,11 @@ Partial Class Form2
         Me.MaterialTabControl1.Controls.Add(Me.tabPRev)
         Me.MaterialTabControl1.Controls.Add(Me.tabPPrint)
         Me.MaterialTabControl1.Depth = 0
-        Me.MaterialTabControl1.Location = New System.Drawing.Point(0, 87)
+        Me.MaterialTabControl1.Location = New System.Drawing.Point(3, 87)
         Me.MaterialTabControl1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialTabControl1.Name = "MaterialTabControl1"
         Me.MaterialTabControl1.SelectedIndex = 0
-        Me.MaterialTabControl1.Size = New System.Drawing.Size(709, 73)
+        Me.MaterialTabControl1.Size = New System.Drawing.Size(705, 73)
         Me.MaterialTabControl1.TabIndex = 15
         '
         'tabPFile
@@ -856,7 +856,7 @@ Partial Class Form2
         Me.tabPFile.Location = New System.Drawing.Point(4, 22)
         Me.tabPFile.Name = "tabPFile"
         Me.tabPFile.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabPFile.Size = New System.Drawing.Size(701, 47)
+        Me.tabPFile.Size = New System.Drawing.Size(697, 47)
         Me.tabPFile.TabIndex = 0
         Me.tabPFile.Text = "File"
         Me.tabPFile.UseVisualStyleBackColor = True
@@ -1261,6 +1261,35 @@ Partial Class Form2
         Me.btnTable.Text = "Table"
         Me.btnTable.UseVisualStyleBackColor = True
         '
+        'tabPSettings
+        '
+        Me.tabPSettings.Controls.Add(Me.chkIndent)
+        Me.tabPSettings.Location = New System.Drawing.Point(4, 22)
+        Me.tabPSettings.Name = "tabPSettings"
+        Me.tabPSettings.Size = New System.Drawing.Size(701, 47)
+        Me.tabPSettings.TabIndex = 3
+        Me.tabPSettings.Text = "Settings"
+        Me.tabPSettings.UseVisualStyleBackColor = True
+        '
+        'chkIndent
+        '
+        Me.chkIndent.AutoSize = True
+        Me.chkIndent.Checked = True
+        Me.chkIndent.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkIndent.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.chkIndent.Depth = 0
+        Me.chkIndent.Font = New System.Drawing.Font("Roboto", 10.0!)
+        Me.chkIndent.Location = New System.Drawing.Point(7, 9)
+        Me.chkIndent.Margin = New System.Windows.Forms.Padding(0)
+        Me.chkIndent.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.chkIndent.MouseState = MaterialSkin.MouseState.HOVER
+        Me.chkIndent.Name = "chkIndent"
+        Me.chkIndent.Ripple = True
+        Me.chkIndent.Size = New System.Drawing.Size(167, 30)
+        Me.chkIndent.TabIndex = 0
+        Me.chkIndent.Text = "Paragraph Indentation"
+        Me.chkIndent.UseVisualStyleBackColor = True
+        '
         'tabPHelp
         '
         Me.tabPHelp.Controls.Add(Me.btnEULA)
@@ -1369,30 +1398,18 @@ Partial Class Form2
         Me.tabPPrint.Text = "Printing"
         Me.tabPPrint.UseVisualStyleBackColor = True
         '
-        'tabSelFile
+        'MaterialLabel1
         '
-        Me.tabSelFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tabSelFile.BaseTabControl = Me.MaterialTabControl1
-        Me.tabSelFile.Depth = 0
-        Me.tabSelFile.Location = New System.Drawing.Point(0, 64)
-        Me.tabSelFile.MouseState = MaterialSkin.MouseState.HOVER
-        Me.tabSelFile.Name = "tabSelFile"
-        Me.tabSelFile.Size = New System.Drawing.Size(713, 23)
-        Me.tabSelFile.TabIndex = 16
-        Me.tabSelFile.Text = "File"
-        '
-        'btnPrint
-        '
-        Me.btnPrint.Depth = 0
-        Me.btnPrint.Location = New System.Drawing.Point(7, 6)
-        Me.btnPrint.MouseState = MaterialSkin.MouseState.HOVER
-        Me.btnPrint.Name = "btnPrint"
-        Me.btnPrint.Primary = True
-        Me.btnPrint.Size = New System.Drawing.Size(74, 35)
-        Me.btnPrint.TabIndex = 1
-        Me.btnPrint.Text = "Print"
-        Me.btnPrint.UseVisualStyleBackColor = True
+        Me.MaterialLabel1.AutoSize = True
+        Me.MaterialLabel1.Depth = 0
+        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel1.Location = New System.Drawing.Point(207, 13)
+        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel1.Name = "MaterialLabel1"
+        Me.MaterialLabel1.Size = New System.Drawing.Size(484, 19)
+        Me.MaterialLabel1.TabIndex = 5
+        Me.MaterialLabel1.Text = "Unfortunately, printing isn't yet available in this version of Sword. Sorry!"
         '
         'btnPreview
         '
@@ -1409,47 +1426,30 @@ Partial Class Form2
         Me.btnPreview.Text = "Print Preview"
         Me.btnPreview.UseVisualStyleBackColor = True
         '
-        'MaterialLabel1
+        'btnPrint
         '
-        Me.MaterialLabel1.AutoSize = True
-        Me.MaterialLabel1.Depth = 0
-        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel1.Location = New System.Drawing.Point(207, 13)
-        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel1.Name = "MaterialLabel1"
-        Me.MaterialLabel1.Size = New System.Drawing.Size(484, 19)
-        Me.MaterialLabel1.TabIndex = 5
-        Me.MaterialLabel1.Text = "Unfortunately, printing isn't yet available in this version of Sword. Sorry!"
+        Me.btnPrint.Depth = 0
+        Me.btnPrint.Location = New System.Drawing.Point(7, 6)
+        Me.btnPrint.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Primary = True
+        Me.btnPrint.Size = New System.Drawing.Size(74, 35)
+        Me.btnPrint.TabIndex = 1
+        Me.btnPrint.Text = "Print"
+        Me.btnPrint.UseVisualStyleBackColor = True
         '
-        'tabPSettings
+        'tabSelFile
         '
-        Me.tabPSettings.Controls.Add(Me.chkIndent)
-        Me.tabPSettings.Location = New System.Drawing.Point(4, 22)
-        Me.tabPSettings.Name = "tabPSettings"
-        Me.tabPSettings.Size = New System.Drawing.Size(701, 47)
-        Me.tabPSettings.TabIndex = 3
-        Me.tabPSettings.Text = "Settings"
-        Me.tabPSettings.UseVisualStyleBackColor = True
-        '
-        'chkIndent
-        '
-        Me.chkIndent.AutoSize = True
-        Me.chkIndent.Checked = True
-        Me.chkIndent.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkIndent.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.chkIndent.Depth = 0
-        Me.chkIndent.Font = New System.Drawing.Font("Roboto", 10.0!)
-        Me.chkIndent.Location = New System.Drawing.Point(7, 9)
-        Me.chkIndent.Margin = New System.Windows.Forms.Padding(0)
-        Me.chkIndent.MouseLocation = New System.Drawing.Point(-1, -1)
-        Me.chkIndent.MouseState = MaterialSkin.MouseState.HOVER
-        Me.chkIndent.Name = "chkIndent"
-        Me.chkIndent.Ripple = True
-        Me.chkIndent.Size = New System.Drawing.Size(167, 30)
-        Me.chkIndent.TabIndex = 0
-        Me.chkIndent.Text = "Paragraph Indentation"
-        Me.chkIndent.UseVisualStyleBackColor = True
+        Me.tabSelFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tabSelFile.BaseTabControl = Me.MaterialTabControl1
+        Me.tabSelFile.Depth = 0
+        Me.tabSelFile.Location = New System.Drawing.Point(0, 64)
+        Me.tabSelFile.MouseState = MaterialSkin.MouseState.HOVER
+        Me.tabSelFile.Name = "tabSelFile"
+        Me.tabSelFile.Size = New System.Drawing.Size(713, 23)
+        Me.tabSelFile.TabIndex = 16
+        Me.tabSelFile.Text = "File"
         '
         'Form2
         '
@@ -1482,14 +1482,14 @@ Partial Class Form2
         Me.tabPHome.PerformLayout()
         Me.tabPIns.ResumeLayout(False)
         Me.tabPIns.PerformLayout()
+        Me.tabPSettings.ResumeLayout(False)
+        Me.tabPSettings.PerformLayout()
         Me.tabPHelp.ResumeLayout(False)
         Me.tabPHelp.PerformLayout()
         Me.tabPRev.ResumeLayout(False)
         Me.tabPRev.PerformLayout()
         Me.tabPPrint.ResumeLayout(False)
         Me.tabPPrint.PerformLayout()
-        Me.tabPSettings.ResumeLayout(False)
-        Me.tabPSettings.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
