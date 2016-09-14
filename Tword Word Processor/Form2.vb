@@ -1,12 +1,28 @@
 ﻿Imports System.IO
 Imports System.Text.RegularExpressions
 Imports NHunspell
+Imports MaterialSkin
+
+'    Sword Material Design Word Processor
+'    Copyright (c) 2016  Damian Heaton <dh64784@gmail.com>
+'
+'    This program Is free software: you can redistribute it And/Or modify
+'    it under the terms Of the GNU General Public License As published by
+'    the Free Software Foundation, either version 3 Of the License, Or
+'    (at your option) any later version.
+'
+'    This program Is distributed In the hope that it will be useful,
+'    but WITHOUT ANY WARRANTY; without even the implied warranty Of
+'    MERCHANTABILITY Or FITNESS FOR A PARTICULAR PURPOSE.  See the
+'    GNU General Public License For more details.
+'
+'    You should have received a copy Of the GNU General Public License
+'    along with this program.  If Not, see < http: //www.gnu.org/licenses/>.
 
 Public Class Form2
-
     Dim fileToOpen As String
 
-    Private Sub print(ByVal box As RichTextBox, _
+    Private Sub print(ByVal box As RichTextBox,
 ByVal filename As String)
         Dim rect As Rectangle = box.DisplayRectangle
         Dim bmp As New Bitmap(rect.Width, rect.Height, Imaging.PixelFormat.Format32bppArgb)
@@ -19,9 +35,14 @@ ByVal filename As String)
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+        SkinManager.AddFormToManage(Me)
+        SkinManager.Theme = MaterialSkinManager.Themes.LIGHT
+        SkinManager.ColorScheme = New ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue500, Accent.LightBlue200, TextShade.WHITE)
+
         tacNav.SelectedTab = tabFile
         Me.Text = "Sword Word Processor - Unnamed File"
-        Label3.Text = "Dictionary: " & My.Settings.Dictionary
+        lblDict.Text = "Dictionary: " & My.Settings.Dictionary
 
         Try
             fileToOpen = AppDomain.CurrentDomain.SetupInformation.ActivationArguments.ActivationData(0)
@@ -39,22 +60,24 @@ ByVal filename As String)
             SaveDialog.FileName = fileToOpen
         End If
         txtContent.EnableAutoDragDrop = True
+
+        chkIndent.Checked = My.Settings.Indents
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         tacNav.SelectedTab = tabFile
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         tacNav.SelectedTab = tabHome
     End Sub
 
-    Private Sub Button41_Click(sender As Object, e As EventArgs) Handles Button41.Click
+    Private Sub btnNew_Click(sender As Object, e As EventArgs) Handles btnNew.Click
         txtContent.Text = ""
         Me.Text = "Sword Word Processor - Unnamed File"
     End Sub
 
-    Private Sub Button37_Click(sender As Object, e As EventArgs) Handles Button37.Click
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Try
             txtContent.SaveFile(SaveDialog.FileName)
             Me.Text = "Sword Word Processor - " & SaveDialog.FileName
@@ -70,7 +93,7 @@ ByVal filename As String)
         End Try
     End Sub
 
-    Private Sub Button39_Click(sender As Object, e As EventArgs) Handles Button39.Click
+    Private Sub btnSaveAs_Click(sender As Object, e As EventArgs) Handles btnSaveAs.Click
         SaveDialog.Filter = "Sword Document|*.sdc|Microsoft Word Document 97 - 2003|*.doc|Rich Text File Format|*.rtf|All File Types|*.*"
         SaveDialog.FilterIndex = 1
         SaveDialog.ShowDialog()
@@ -81,7 +104,7 @@ ByVal filename As String)
         End Try
     End Sub
 
-    Private Sub Button40_Click(sender As Object, e As EventArgs) Handles Button40.Click
+    Private Sub btnOpen_Click(sender As Object, e As EventArgs) Handles btnOpen.Click
         OpenDialog.Filter = "Sword Document|*.sdc|Tword Document|*.twd; *.twde|Microsoft Word Document 97 - 2003|*.doc|Rich Text File Format|*.rtf|All File Types|*.*"
         OpenDialog.FilterIndex = 1
         OpenDialog.ShowDialog()
@@ -93,7 +116,7 @@ ByVal filename As String)
         End Try
     End Sub
 
-    Private Sub Button35_Click(sender As Object, e As EventArgs) Handles Button35.Click
+    Private Sub btnExport_Click(sender As Object, e As EventArgs) Handles btnExport.Click
         SaveDialog.Filter = "PNG Image|*.png"
         SaveDialog.FilterIndex = 1
         SaveDialog.ShowDialog()
@@ -128,7 +151,7 @@ ByVal filename As String)
         Process.Start(webAddress)
     End Sub
 
-    Private Sub Button49_Click(sender As Object, e As EventArgs) Handles Button49.Click
+    Private Sub btnPaste_Click(sender As Object, e As EventArgs) Handles btnPaste.Click
         txtContent.Paste()
     End Sub
 
@@ -140,12 +163,12 @@ ByVal filename As String)
         txtContent.Copy()
     End Sub
 
-    Private Sub Button43_Click(sender As Object, e As EventArgs) Handles Button43.Click
+    Private Sub btnFont_Click(sender As Object, e As EventArgs) Handles btnFont.Click
         FontDialog.ShowDialog()
         txtContent.SelectionFont = FontDialog.Font
     End Sub
 
-    Private Sub Button48_Click(sender As Object, e As EventArgs) Handles Button48.Click
+    Private Sub btnBold_Click(sender As Object, e As EventArgs) Handles btnBold.Click
         If txtContent.SelectionFont.Bold = False Then
             txtContent.SelectionFont = New Font(txtContent.SelectionFont, txtContent.SelectionFont.Style Or FontStyle.Bold)
         Else
@@ -153,7 +176,7 @@ ByVal filename As String)
         End If
     End Sub
 
-    Private Sub Button47_Click(sender As Object, e As EventArgs) Handles Button47.Click
+    Private Sub btnItalics_Click(sender As Object, e As EventArgs) Handles btnItalics.Click
         If txtContent.SelectionFont.Italic = False Then
             txtContent.SelectionFont = New Font(txtContent.SelectionFont, txtContent.SelectionFont.Style Or FontStyle.Italic)
         Else
@@ -161,7 +184,7 @@ ByVal filename As String)
         End If
     End Sub
 
-    Private Sub Button44_Click(sender As Object, e As EventArgs) Handles Button44.Click
+    Private Sub btnUnderline_Click(sender As Object, e As EventArgs) Handles btnUnderline.Click
         If txtContent.SelectionFont.Underline = False Then
             txtContent.SelectionFont = New Font(txtContent.SelectionFont, txtContent.SelectionFont.Style Or FontStyle.Underline)
         Else
@@ -169,7 +192,7 @@ ByVal filename As String)
         End If
     End Sub
 
-    Private Sub Button42_Click(sender As Object, e As EventArgs) Handles Button42.Click
+    Private Sub btnStrikeout_Click(sender As Object, e As EventArgs) Handles btnStrikeout.Click
         If txtContent.SelectionFont.Strikeout = False Then
             txtContent.SelectionFont = New Font(txtContent.SelectionFont, txtContent.SelectionFont.Style Or FontStyle.Strikeout)
         Else
@@ -177,29 +200,29 @@ ByVal filename As String)
         End If
     End Sub
 
-    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+    Private Sub btnColour_Click(sender As Object, e As EventArgs) Handles btnColour.Click
         ColourDialog.ShowDialog()
         txtContent.SelectionColor = ColourDialog.Color
     End Sub
 
-    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+    Private Sub btnHighlight_Click(sender As Object, e As EventArgs) Handles btnHighlight.Click
         ColourDialog.ShowDialog()
         txtContent.SelectionBackColor = ColourDialog.Color
     End Sub
 
-    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+    Private Sub btnLeft_Click(sender As Object, e As EventArgs) Handles btnLeft.Click
         txtContent.SelectionAlignment = HorizontalAlignment.Left
     End Sub
 
-    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+    Private Sub btnCenter_Click(sender As Object, e As EventArgs) Handles btnCenter.Click
         txtContent.SelectionAlignment = HorizontalAlignment.Center
     End Sub
 
-    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+    Private Sub btnRight_Click(sender As Object, e As EventArgs) Handles btnRight.Click
         txtContent.SelectionAlignment = HorizontalAlignment.Right
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+    Private Sub btnList_Click(sender As Object, e As EventArgs) Handles btnList.Click
         If txtContent.SelectionBullet = True Then
             txtContent.SelectionBullet = False
         Else
@@ -207,15 +230,15 @@ ByVal filename As String)
         End If
     End Sub
 
-    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+    Private Sub btnFind_Click(sender As Object, e As EventArgs) Handles btnFind.Click
         find.Show()
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+    Private Sub btnReplace_Click(sender As Object, e As EventArgs) Handles btnReplace.Click
         replace.Show()
     End Sub
 
-    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+    Private Sub btnTable_Click(sender As Object, e As EventArgs) Handles btnTable.Click
         Dim columns As Integer = Convert.ToInt32(InputBox("How many columns?")) - 1
         Dim rows As Integer = Convert.ToInt32(InputBox("How many rows?")) - 1
         Dim sbTaRtf As New System.Text.StringBuilder
@@ -236,7 +259,7 @@ ByVal filename As String)
         txtContent.Rtf = sbTaRtf.ToString()
     End Sub
 
-    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+    Private Sub btnImg_Click(sender As Object, e As EventArgs) Handles btnImg.Click
         OpenDialog.ShowDialog()
         Try
             Dim img As Image = Image.FromFile(OpenDialog.FileName)
@@ -248,7 +271,7 @@ ByVal filename As String)
         End Try
     End Sub
 
-    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+    Private Sub btnWebImg_Click(sender As Object, e As EventArgs) Handles btnWebImg.Click
         Dim url As String = InputBox("Website address of image? (Direct - such as http://www.example.com/cat-image.jpg)")
         SaveDialog.ShowDialog()
         Try
@@ -265,13 +288,13 @@ ByVal filename As String)
         Process.Start(e.LinkText)
     End Sub
 
-    Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
+    Private Sub btnBreak_Click(sender As Object, e As EventArgs) Handles btnBreak.Click
         txtContent.AppendText(Environment.NewLine)
         txtContent.AppendText("_______________________________________________")
         txtContent.AppendText(Environment.NewLine)
     End Sub
 
-    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+    Private Sub btnComment_Click(sender As Object, e As EventArgs) Handles btnComment.Click
         Dim comment As String = InputBox("Comment:")
         txtContent.Select(txtContent.TextLength, 0)
         txtContent.SelectionColor = Color.Blue
@@ -283,7 +306,7 @@ ByVal filename As String)
         txtContent.SelectionColor = Color.Black
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         tacNav.SelectedTab = tabInsert
     End Sub
 
@@ -293,26 +316,29 @@ ByVal filename As String)
 
     Private Sub txtContent_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtContent.KeyPress
         If e.KeyChar = Microsoft.VisualBasic.ChrW(Keys.Return) Then
-            For indent As Integer = 1 To trackIndent.Value
-                txtContent.AppendText(" ")
-            Next
+            If chkIndent.Checked Then
+                txtContent.AppendText("    ")
+            End If
+            'For indent As Integer = 1 To trackIndent.Value
+            '    txtContent.AppendText(" ")
+            'Next
             e.Handled = True
         End If
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
         tacNav.SelectedTab = tabLayout
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
         tacNav.SelectedTab = tabHelp
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub Button8_Click(sender As Object, e As EventArgs)
         tacNav.SelectedTab = tabReview
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub btnCheckSpell_Click(sender As Object, e As EventArgs) Handles btnCheckSpell.Click
         ' Process all your words here, don't create the Hunspell object for every word.
         frmSpellCheck.tabSpellCheck.TabPages.Clear()
         Dim suggestionspell As Integer = 0
@@ -343,25 +369,23 @@ ByVal filename As String)
         Next
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub btnDict_Click(sender As Object, e As EventArgs) Handles btnDict.Click
         seldict.Show()
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+    Private Sub btnAddToDict_Click(sender As Object, e As EventArgs) Handles btnAddToDict.Click
         Using writer As New StreamWriter(My.Settings.Dictionary + ".dic", True) 'True for append mode
             writer.Write(txtContent.SelectedText + Environment.NewLine)
         End Using
         MsgBox("Selected text added to Dictionary.", MsgBoxStyle.Information, "Data Saved")
     End Sub
 
-    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+    Private Sub btnEULA_Click(sender As Object, e As EventArgs) Handles btnEULA.Click
         txtContent.LoadFile(Application.StartupPath & "\eula.sdc")
         Me.Text = "Sword Word Processor - End-User License Agreement"
     End Sub
 
-    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
-        My.Settings.Username = ""
-        My.Settings.ID = ""
-        MsgBox("Sword has been successfully de-registered.")
+    Private Sub chkIndent_Click(sender As Object, e As EventArgs) Handles chkIndent.Click
+        My.Settings.Indents = chkIndent.Checked
     End Sub
 End Class

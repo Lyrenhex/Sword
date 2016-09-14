@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Form2
-    Inherits System.Windows.Forms.Form
+    Inherits MaterialSkin.Controls.MaterialForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -23,12 +23,6 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
         Me.tacNav = New System.Windows.Forms.TabControl()
         Me.tabFile = New System.Windows.Forms.TabPage()
         Me.Button35 = New System.Windows.Forms.Button()
@@ -85,6 +79,50 @@ Partial Class Form2
         Me.FontDialog = New System.Windows.Forms.FontDialog()
         Me.ColourDialog = New System.Windows.Forms.ColorDialog()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
+        Me.MaterialTabControl1 = New MaterialSkin.Controls.MaterialTabControl()
+        Me.tabPFile = New System.Windows.Forms.TabPage()
+        Me.btnExport = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnSaveAs = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnOpen = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnSave = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnNew = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.tabPHome = New System.Windows.Forms.TabPage()
+        Me.btnList = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnFind = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnReplace = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnRight = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnCenter = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnLeft = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnHighlight = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnColour = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnStrikeout = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnUnderline = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnItalics = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnBold = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnFont = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.btnCopy = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnCut = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnPaste = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.tabPIns = New System.Windows.Forms.TabPage()
+        Me.btnComment = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnBreak = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnWebImg = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnImg = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnTable = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.tabPSettings = New System.Windows.Forms.TabPage()
+        Me.chkIndent = New MaterialSkin.Controls.MaterialCheckBox()
+        Me.tabPHelp = New System.Windows.Forms.TabPage()
+        Me.btnEULA = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.tabPRev = New System.Windows.Forms.TabPage()
+        Me.lblDict = New MaterialSkin.Controls.MaterialLabel()
+        Me.btnAddToDict = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnDict = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnCheckSpell = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.tabPPrint = New System.Windows.Forms.TabPage()
+        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.btnPreview = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.btnPrint = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.tabSelFile = New MaterialSkin.Controls.MaterialTabSelector()
         Me.tacNav.SuspendLayout()
         Me.tabFile.SuspendLayout()
         Me.tabHome.SuspendLayout()
@@ -95,91 +133,15 @@ Partial Class Form2
         Me.tabHelp.SuspendLayout()
         Me.tabReview.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.MaterialTabControl1.SuspendLayout()
+        Me.tabPFile.SuspendLayout()
+        Me.tabPHome.SuspendLayout()
+        Me.tabPIns.SuspendLayout()
+        Me.tabPSettings.SuspendLayout()
+        Me.tabPHelp.SuspendLayout()
+        Me.tabPRev.SuspendLayout()
+        Me.tabPPrint.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Gold
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Gold
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(0, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "FILE"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(74, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "HOME"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(148, 0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "INSERT"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(222, 0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(95, 23)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "PAGE LAYOUT"
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.Transparent
-        Me.Button7.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Location = New System.Drawing.Point(316, 0)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 6
-        Me.Button7.Text = "HELP"
-        Me.Button7.UseVisualStyleBackColor = False
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.Transparent
-        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Location = New System.Drawing.Point(390, 0)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 7
-        Me.Button8.Text = "REVIEW"
-        Me.Button8.UseVisualStyleBackColor = False
         '
         'tacNav
         '
@@ -191,11 +153,12 @@ Partial Class Form2
         Me.tacNav.Controls.Add(Me.tabLayout)
         Me.tacNav.Controls.Add(Me.tabHelp)
         Me.tacNav.Controls.Add(Me.tabReview)
-        Me.tacNav.Location = New System.Drawing.Point(0, 2)
+        Me.tacNav.Location = New System.Drawing.Point(0, 444)
         Me.tacNav.Name = "tacNav"
         Me.tacNav.SelectedIndex = 0
-        Me.tacNav.Size = New System.Drawing.Size(622, 73)
+        Me.tacNav.Size = New System.Drawing.Size(713, 73)
         Me.tacNav.TabIndex = 13
+        Me.tacNav.Visible = False
         '
         'tabFile
         '
@@ -210,7 +173,7 @@ Partial Class Form2
         Me.tabFile.Location = New System.Drawing.Point(4, 22)
         Me.tabFile.Name = "tabFile"
         Me.tabFile.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabFile.Size = New System.Drawing.Size(614, 47)
+        Me.tabFile.Size = New System.Drawing.Size(705, 47)
         Me.tabFile.TabIndex = 0
         Me.tabFile.UseVisualStyleBackColor = True
         '
@@ -347,7 +310,7 @@ Partial Class Form2
         Me.tabHome.Location = New System.Drawing.Point(4, 22)
         Me.tabHome.Name = "tabHome"
         Me.tabHome.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabHome.Size = New System.Drawing.Size(614, 47)
+        Me.tabHome.Size = New System.Drawing.Size(705, 47)
         Me.tabHome.TabIndex = 1
         Me.tabHome.UseVisualStyleBackColor = True
         '
@@ -594,7 +557,7 @@ Partial Class Form2
         Me.tabInsert.Controls.Add(Me.Button18)
         Me.tabInsert.Location = New System.Drawing.Point(4, 22)
         Me.tabInsert.Name = "tabInsert"
-        Me.tabInsert.Size = New System.Drawing.Size(614, 47)
+        Me.tabInsert.Size = New System.Drawing.Size(705, 47)
         Me.tabInsert.TabIndex = 2
         Me.tabInsert.UseVisualStyleBackColor = True
         '
@@ -676,7 +639,7 @@ Partial Class Form2
         Me.tabLayout.Controls.Add(Me.Label1)
         Me.tabLayout.Location = New System.Drawing.Point(4, 22)
         Me.tabLayout.Name = "tabLayout"
-        Me.tabLayout.Size = New System.Drawing.Size(614, 47)
+        Me.tabLayout.Size = New System.Drawing.Size(705, 47)
         Me.tabLayout.TabIndex = 3
         Me.tabLayout.UseVisualStyleBackColor = True
         '
@@ -725,7 +688,7 @@ Partial Class Form2
         Me.tabHelp.Controls.Add(Me.Button23)
         Me.tabHelp.Location = New System.Drawing.Point(4, 22)
         Me.tabHelp.Name = "tabHelp"
-        Me.tabHelp.Size = New System.Drawing.Size(614, 47)
+        Me.tabHelp.Size = New System.Drawing.Size(705, 47)
         Me.tabHelp.TabIndex = 4
         Me.tabHelp.UseVisualStyleBackColor = True
         '
@@ -766,7 +729,7 @@ Partial Class Form2
         Me.tabReview.Controls.Add(Me.Button4)
         Me.tabReview.Location = New System.Drawing.Point(4, 22)
         Me.tabReview.Name = "tabReview"
-        Me.tabReview.Size = New System.Drawing.Size(614, 47)
+        Me.tabReview.Size = New System.Drawing.Size(705, 47)
         Me.tabReview.TabIndex = 5
         Me.tabReview.UseVisualStyleBackColor = True
         '
@@ -828,18 +791,22 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.txtContent)
-        Me.Panel1.Location = New System.Drawing.Point(13, 85)
+        Me.Panel1.Location = New System.Drawing.Point(13, 136)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(588, 417)
+        Me.Panel1.Size = New System.Drawing.Size(687, 362)
         Me.Panel1.TabIndex = 14
         '
         'txtContent
         '
+        Me.txtContent.AcceptsTab = True
         Me.txtContent.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtContent.BulletIndent = 4
         Me.txtContent.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txtContent.EnableAutoDragDrop = True
+        Me.txtContent.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtContent.Location = New System.Drawing.Point(0, 0)
         Me.txtContent.Name = "txtContent"
-        Me.txtContent.Size = New System.Drawing.Size(586, 415)
+        Me.txtContent.Size = New System.Drawing.Size(685, 360)
         Me.txtContent.TabIndex = 0
         Me.txtContent.Text = ""
         '
@@ -860,19 +827,639 @@ Partial Class Form2
         Me.PPDialog.Name = "PPDialog"
         Me.PPDialog.Visible = False
         '
+        'MaterialTabControl1
+        '
+        Me.MaterialTabControl1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MaterialTabControl1.Controls.Add(Me.tabPFile)
+        Me.MaterialTabControl1.Controls.Add(Me.tabPHome)
+        Me.MaterialTabControl1.Controls.Add(Me.tabPIns)
+        Me.MaterialTabControl1.Controls.Add(Me.tabPSettings)
+        Me.MaterialTabControl1.Controls.Add(Me.tabPHelp)
+        Me.MaterialTabControl1.Controls.Add(Me.tabPRev)
+        Me.MaterialTabControl1.Controls.Add(Me.tabPPrint)
+        Me.MaterialTabControl1.Depth = 0
+        Me.MaterialTabControl1.Location = New System.Drawing.Point(3, 87)
+        Me.MaterialTabControl1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialTabControl1.Name = "MaterialTabControl1"
+        Me.MaterialTabControl1.SelectedIndex = 0
+        Me.MaterialTabControl1.Size = New System.Drawing.Size(705, 73)
+        Me.MaterialTabControl1.TabIndex = 15
+        '
+        'tabPFile
+        '
+        Me.tabPFile.Controls.Add(Me.btnExport)
+        Me.tabPFile.Controls.Add(Me.btnSaveAs)
+        Me.tabPFile.Controls.Add(Me.btnOpen)
+        Me.tabPFile.Controls.Add(Me.btnSave)
+        Me.tabPFile.Controls.Add(Me.btnNew)
+        Me.tabPFile.Location = New System.Drawing.Point(4, 22)
+        Me.tabPFile.Name = "tabPFile"
+        Me.tabPFile.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabPFile.Size = New System.Drawing.Size(697, 47)
+        Me.tabPFile.TabIndex = 0
+        Me.tabPFile.Text = "File"
+        Me.tabPFile.UseVisualStyleBackColor = True
+        '
+        'btnExport
+        '
+        Me.btnExport.AutoSize = True
+        Me.btnExport.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnExport.Depth = 0
+        Me.btnExport.Location = New System.Drawing.Point(322, 5)
+        Me.btnExport.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnExport.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnExport.Name = "btnExport"
+        Me.btnExport.Primary = False
+        Me.btnExport.Size = New System.Drawing.Size(64, 36)
+        Me.btnExport.TabIndex = 4
+        Me.btnExport.Text = "Export"
+        Me.btnExport.UseVisualStyleBackColor = True
+        '
+        'btnSaveAs
+        '
+        Me.btnSaveAs.AutoSize = True
+        Me.btnSaveAs.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnSaveAs.Depth = 0
+        Me.btnSaveAs.Location = New System.Drawing.Point(247, 5)
+        Me.btnSaveAs.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnSaveAs.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnSaveAs.Name = "btnSaveAs"
+        Me.btnSaveAs.Primary = False
+        Me.btnSaveAs.Size = New System.Drawing.Size(67, 36)
+        Me.btnSaveAs.TabIndex = 3
+        Me.btnSaveAs.Text = "Save as"
+        Me.btnSaveAs.UseVisualStyleBackColor = True
+        '
+        'btnOpen
+        '
+        Me.btnOpen.Depth = 0
+        Me.btnOpen.Location = New System.Drawing.Point(166, 6)
+        Me.btnOpen.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnOpen.Name = "btnOpen"
+        Me.btnOpen.Primary = True
+        Me.btnOpen.Size = New System.Drawing.Size(74, 35)
+        Me.btnOpen.TabIndex = 2
+        Me.btnOpen.Text = "Open"
+        Me.btnOpen.UseVisualStyleBackColor = True
+        '
+        'btnSave
+        '
+        Me.btnSave.Depth = 0
+        Me.btnSave.Location = New System.Drawing.Point(86, 6)
+        Me.btnSave.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Primary = True
+        Me.btnSave.Size = New System.Drawing.Size(74, 35)
+        Me.btnSave.TabIndex = 1
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'btnNew
+        '
+        Me.btnNew.Depth = 0
+        Me.btnNew.Location = New System.Drawing.Point(6, 6)
+        Me.btnNew.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnNew.Name = "btnNew"
+        Me.btnNew.Primary = True
+        Me.btnNew.Size = New System.Drawing.Size(74, 35)
+        Me.btnNew.TabIndex = 0
+        Me.btnNew.Text = "New"
+        Me.btnNew.UseVisualStyleBackColor = True
+        '
+        'tabPHome
+        '
+        Me.tabPHome.Controls.Add(Me.btnList)
+        Me.tabPHome.Controls.Add(Me.btnFind)
+        Me.tabPHome.Controls.Add(Me.btnReplace)
+        Me.tabPHome.Controls.Add(Me.btnRight)
+        Me.tabPHome.Controls.Add(Me.btnCenter)
+        Me.tabPHome.Controls.Add(Me.btnLeft)
+        Me.tabPHome.Controls.Add(Me.btnHighlight)
+        Me.tabPHome.Controls.Add(Me.btnColour)
+        Me.tabPHome.Controls.Add(Me.btnStrikeout)
+        Me.tabPHome.Controls.Add(Me.btnUnderline)
+        Me.tabPHome.Controls.Add(Me.btnItalics)
+        Me.tabPHome.Controls.Add(Me.btnBold)
+        Me.tabPHome.Controls.Add(Me.btnFont)
+        Me.tabPHome.Controls.Add(Me.btnCopy)
+        Me.tabPHome.Controls.Add(Me.btnCut)
+        Me.tabPHome.Controls.Add(Me.btnPaste)
+        Me.tabPHome.Location = New System.Drawing.Point(4, 22)
+        Me.tabPHome.Name = "tabPHome"
+        Me.tabPHome.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabPHome.Size = New System.Drawing.Size(701, 47)
+        Me.tabPHome.TabIndex = 1
+        Me.tabPHome.Text = "Home"
+        Me.tabPHome.UseVisualStyleBackColor = True
+        '
+        'btnList
+        '
+        Me.btnList.AutoSize = True
+        Me.btnList.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnList.Depth = 0
+        Me.btnList.Location = New System.Drawing.Point(491, 5)
+        Me.btnList.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnList.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnList.Name = "btnList"
+        Me.btnList.Primary = False
+        Me.btnList.Size = New System.Drawing.Size(40, 36)
+        Me.btnList.TabIndex = 19
+        Me.btnList.Text = "List"
+        Me.btnList.UseVisualStyleBackColor = True
+        '
+        'btnFind
+        '
+        Me.btnFind.AutoSize = True
+        Me.btnFind.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnFind.Depth = 0
+        Me.btnFind.Location = New System.Drawing.Point(363, 5)
+        Me.btnFind.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnFind.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnFind.Name = "btnFind"
+        Me.btnFind.Primary = False
+        Me.btnFind.Size = New System.Drawing.Size(42, 36)
+        Me.btnFind.TabIndex = 18
+        Me.btnFind.Text = "Find"
+        Me.btnFind.UseVisualStyleBackColor = True
+        '
+        'btnReplace
+        '
+        Me.btnReplace.AutoSize = True
+        Me.btnReplace.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnReplace.Depth = 0
+        Me.btnReplace.Location = New System.Drawing.Point(413, 5)
+        Me.btnReplace.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnReplace.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnReplace.Name = "btnReplace"
+        Me.btnReplace.Primary = False
+        Me.btnReplace.Size = New System.Drawing.Size(70, 36)
+        Me.btnReplace.TabIndex = 17
+        Me.btnReplace.Text = "Replace"
+        Me.btnReplace.UseVisualStyleBackColor = True
+        '
+        'btnRight
+        '
+        Me.btnRight.Depth = 0
+        Me.btnRight.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRight.Location = New System.Drawing.Point(326, 6)
+        Me.btnRight.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnRight.Name = "btnRight"
+        Me.btnRight.Primary = True
+        Me.btnRight.Size = New System.Drawing.Size(30, 35)
+        Me.btnRight.TabIndex = 16
+        Me.btnRight.Text = "R"
+        Me.btnRight.UseVisualStyleBackColor = True
+        '
+        'btnCenter
+        '
+        Me.btnCenter.Depth = 0
+        Me.btnCenter.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCenter.Location = New System.Drawing.Point(297, 6)
+        Me.btnCenter.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnCenter.Name = "btnCenter"
+        Me.btnCenter.Primary = True
+        Me.btnCenter.Size = New System.Drawing.Size(30, 35)
+        Me.btnCenter.TabIndex = 15
+        Me.btnCenter.Text = "C"
+        Me.btnCenter.UseVisualStyleBackColor = True
+        '
+        'btnLeft
+        '
+        Me.btnLeft.Depth = 0
+        Me.btnLeft.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLeft.Location = New System.Drawing.Point(268, 6)
+        Me.btnLeft.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnLeft.Name = "btnLeft"
+        Me.btnLeft.Primary = True
+        Me.btnLeft.Size = New System.Drawing.Size(30, 35)
+        Me.btnLeft.TabIndex = 14
+        Me.btnLeft.Text = "L"
+        Me.btnLeft.UseVisualStyleBackColor = True
+        '
+        'btnHighlight
+        '
+        Me.btnHighlight.Depth = 0
+        Me.btnHighlight.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHighlight.Location = New System.Drawing.Point(231, 6)
+        Me.btnHighlight.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnHighlight.Name = "btnHighlight"
+        Me.btnHighlight.Primary = True
+        Me.btnHighlight.Size = New System.Drawing.Size(30, 35)
+        Me.btnHighlight.TabIndex = 13
+        Me.btnHighlight.Text = "H"
+        Me.btnHighlight.UseVisualStyleBackColor = True
+        '
+        'btnColour
+        '
+        Me.btnColour.Depth = 0
+        Me.btnColour.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnColour.Location = New System.Drawing.Point(195, 6)
+        Me.btnColour.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnColour.Name = "btnColour"
+        Me.btnColour.Primary = True
+        Me.btnColour.Size = New System.Drawing.Size(30, 35)
+        Me.btnColour.TabIndex = 12
+        Me.btnColour.Text = "C"
+        Me.btnColour.UseVisualStyleBackColor = True
+        '
+        'btnStrikeout
+        '
+        Me.btnStrikeout.Depth = 0
+        Me.btnStrikeout.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStrikeout.Location = New System.Drawing.Point(159, 6)
+        Me.btnStrikeout.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnStrikeout.Name = "btnStrikeout"
+        Me.btnStrikeout.Primary = True
+        Me.btnStrikeout.Size = New System.Drawing.Size(30, 35)
+        Me.btnStrikeout.TabIndex = 11
+        Me.btnStrikeout.Text = "S"
+        Me.btnStrikeout.UseVisualStyleBackColor = True
+        '
+        'btnUnderline
+        '
+        Me.btnUnderline.Depth = 0
+        Me.btnUnderline.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUnderline.Location = New System.Drawing.Point(123, 6)
+        Me.btnUnderline.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnUnderline.Name = "btnUnderline"
+        Me.btnUnderline.Primary = True
+        Me.btnUnderline.Size = New System.Drawing.Size(30, 35)
+        Me.btnUnderline.TabIndex = 10
+        Me.btnUnderline.Text = "U"
+        Me.btnUnderline.UseVisualStyleBackColor = True
+        '
+        'btnItalics
+        '
+        Me.btnItalics.Depth = 0
+        Me.btnItalics.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnItalics.Location = New System.Drawing.Point(94, 6)
+        Me.btnItalics.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnItalics.Name = "btnItalics"
+        Me.btnItalics.Primary = True
+        Me.btnItalics.Size = New System.Drawing.Size(30, 35)
+        Me.btnItalics.TabIndex = 9
+        Me.btnItalics.Text = "I"
+        Me.btnItalics.UseVisualStyleBackColor = True
+        '
+        'btnBold
+        '
+        Me.btnBold.Depth = 0
+        Me.btnBold.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBold.Location = New System.Drawing.Point(65, 6)
+        Me.btnBold.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnBold.Name = "btnBold"
+        Me.btnBold.Primary = True
+        Me.btnBold.Size = New System.Drawing.Size(30, 35)
+        Me.btnBold.TabIndex = 8
+        Me.btnBold.Text = "B"
+        Me.btnBold.UseVisualStyleBackColor = True
+        '
+        'btnFont
+        '
+        Me.btnFont.Depth = 0
+        Me.btnFont.Location = New System.Drawing.Point(6, 6)
+        Me.btnFont.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnFont.Name = "btnFont"
+        Me.btnFont.Primary = True
+        Me.btnFont.Size = New System.Drawing.Size(53, 35)
+        Me.btnFont.TabIndex = 7
+        Me.btnFont.Text = "Font"
+        Me.btnFont.UseVisualStyleBackColor = True
+        '
+        'btnCopy
+        '
+        Me.btnCopy.AutoSize = True
+        Me.btnCopy.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnCopy.Depth = 0
+        Me.btnCopy.Location = New System.Drawing.Point(647, 5)
+        Me.btnCopy.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnCopy.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnCopy.Name = "btnCopy"
+        Me.btnCopy.Primary = False
+        Me.btnCopy.Size = New System.Drawing.Size(48, 36)
+        Me.btnCopy.TabIndex = 6
+        Me.btnCopy.Text = "Copy"
+        Me.btnCopy.UseVisualStyleBackColor = True
+        '
+        'btnCut
+        '
+        Me.btnCut.AutoSize = True
+        Me.btnCut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnCut.Depth = 0
+        Me.btnCut.Location = New System.Drawing.Point(601, 5)
+        Me.btnCut.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnCut.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnCut.Name = "btnCut"
+        Me.btnCut.Primary = False
+        Me.btnCut.Size = New System.Drawing.Size(38, 36)
+        Me.btnCut.TabIndex = 5
+        Me.btnCut.Text = "Cut"
+        Me.btnCut.UseVisualStyleBackColor = True
+        '
+        'btnPaste
+        '
+        Me.btnPaste.AutoSize = True
+        Me.btnPaste.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnPaste.Depth = 0
+        Me.btnPaste.Location = New System.Drawing.Point(539, 5)
+        Me.btnPaste.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnPaste.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnPaste.Name = "btnPaste"
+        Me.btnPaste.Primary = False
+        Me.btnPaste.Size = New System.Drawing.Size(54, 36)
+        Me.btnPaste.TabIndex = 4
+        Me.btnPaste.Text = "Paste"
+        Me.btnPaste.UseVisualStyleBackColor = True
+        '
+        'tabPIns
+        '
+        Me.tabPIns.Controls.Add(Me.btnComment)
+        Me.tabPIns.Controls.Add(Me.btnBreak)
+        Me.tabPIns.Controls.Add(Me.btnWebImg)
+        Me.tabPIns.Controls.Add(Me.btnImg)
+        Me.tabPIns.Controls.Add(Me.btnTable)
+        Me.tabPIns.Location = New System.Drawing.Point(4, 22)
+        Me.tabPIns.Name = "tabPIns"
+        Me.tabPIns.Size = New System.Drawing.Size(701, 47)
+        Me.tabPIns.TabIndex = 2
+        Me.tabPIns.Text = "Insert"
+        Me.tabPIns.UseVisualStyleBackColor = True
+        '
+        'btnComment
+        '
+        Me.btnComment.AutoSize = True
+        Me.btnComment.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnComment.Depth = 0
+        Me.btnComment.Location = New System.Drawing.Point(318, 5)
+        Me.btnComment.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnComment.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnComment.Name = "btnComment"
+        Me.btnComment.Primary = False
+        Me.btnComment.Size = New System.Drawing.Size(80, 36)
+        Me.btnComment.TabIndex = 23
+        Me.btnComment.Text = "Comment"
+        Me.btnComment.UseVisualStyleBackColor = True
+        '
+        'btnBreak
+        '
+        Me.btnBreak.AutoSize = True
+        Me.btnBreak.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnBreak.Depth = 0
+        Me.btnBreak.Location = New System.Drawing.Point(223, 5)
+        Me.btnBreak.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnBreak.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnBreak.Name = "btnBreak"
+        Me.btnBreak.Primary = False
+        Me.btnBreak.Size = New System.Drawing.Size(87, 36)
+        Me.btnBreak.TabIndex = 22
+        Me.btnBreak.Text = "Line Break"
+        Me.btnBreak.UseVisualStyleBackColor = True
+        '
+        'btnWebImg
+        '
+        Me.btnWebImg.AutoSize = True
+        Me.btnWebImg.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnWebImg.Depth = 0
+        Me.btnWebImg.Location = New System.Drawing.Point(129, 5)
+        Me.btnWebImg.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnWebImg.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnWebImg.Name = "btnWebImg"
+        Me.btnWebImg.Primary = False
+        Me.btnWebImg.Size = New System.Drawing.Size(86, 36)
+        Me.btnWebImg.TabIndex = 21
+        Me.btnWebImg.Text = "Web Image"
+        Me.btnWebImg.UseVisualStyleBackColor = True
+        '
+        'btnImg
+        '
+        Me.btnImg.AutoSize = True
+        Me.btnImg.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnImg.Depth = 0
+        Me.btnImg.Location = New System.Drawing.Point(67, 5)
+        Me.btnImg.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnImg.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnImg.Name = "btnImg"
+        Me.btnImg.Primary = False
+        Me.btnImg.Size = New System.Drawing.Size(54, 36)
+        Me.btnImg.TabIndex = 20
+        Me.btnImg.Text = "Image"
+        Me.btnImg.UseVisualStyleBackColor = True
+        '
+        'btnTable
+        '
+        Me.btnTable.AutoSize = True
+        Me.btnTable.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnTable.Depth = 0
+        Me.btnTable.Location = New System.Drawing.Point(6, 5)
+        Me.btnTable.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnTable.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnTable.Name = "btnTable"
+        Me.btnTable.Primary = False
+        Me.btnTable.Size = New System.Drawing.Size(53, 36)
+        Me.btnTable.TabIndex = 19
+        Me.btnTable.Text = "Table"
+        Me.btnTable.UseVisualStyleBackColor = True
+        '
+        'tabPSettings
+        '
+        Me.tabPSettings.Controls.Add(Me.chkIndent)
+        Me.tabPSettings.Location = New System.Drawing.Point(4, 22)
+        Me.tabPSettings.Name = "tabPSettings"
+        Me.tabPSettings.Size = New System.Drawing.Size(701, 47)
+        Me.tabPSettings.TabIndex = 3
+        Me.tabPSettings.Text = "Settings"
+        Me.tabPSettings.UseVisualStyleBackColor = True
+        '
+        'chkIndent
+        '
+        Me.chkIndent.AutoSize = True
+        Me.chkIndent.Checked = True
+        Me.chkIndent.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkIndent.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.chkIndent.Depth = 0
+        Me.chkIndent.Font = New System.Drawing.Font("Roboto", 10.0!)
+        Me.chkIndent.Location = New System.Drawing.Point(7, 9)
+        Me.chkIndent.Margin = New System.Windows.Forms.Padding(0)
+        Me.chkIndent.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.chkIndent.MouseState = MaterialSkin.MouseState.HOVER
+        Me.chkIndent.Name = "chkIndent"
+        Me.chkIndent.Ripple = True
+        Me.chkIndent.Size = New System.Drawing.Size(167, 30)
+        Me.chkIndent.TabIndex = 0
+        Me.chkIndent.Text = "Paragraph Indentation"
+        Me.chkIndent.UseVisualStyleBackColor = True
+        '
+        'tabPHelp
+        '
+        Me.tabPHelp.Controls.Add(Me.btnEULA)
+        Me.tabPHelp.Location = New System.Drawing.Point(4, 22)
+        Me.tabPHelp.Name = "tabPHelp"
+        Me.tabPHelp.Size = New System.Drawing.Size(701, 47)
+        Me.tabPHelp.TabIndex = 4
+        Me.tabPHelp.Text = "Help"
+        Me.tabPHelp.UseVisualStyleBackColor = True
+        '
+        'btnEULA
+        '
+        Me.btnEULA.AutoSize = True
+        Me.btnEULA.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnEULA.Depth = 0
+        Me.btnEULA.Location = New System.Drawing.Point(6, 5)
+        Me.btnEULA.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnEULA.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnEULA.Name = "btnEULA"
+        Me.btnEULA.Primary = False
+        Me.btnEULA.Size = New System.Drawing.Size(112, 36)
+        Me.btnEULA.TabIndex = 24
+        Me.btnEULA.Text = "Read the EULA"
+        Me.btnEULA.UseVisualStyleBackColor = True
+        '
+        'tabPRev
+        '
+        Me.tabPRev.Controls.Add(Me.lblDict)
+        Me.tabPRev.Controls.Add(Me.btnAddToDict)
+        Me.tabPRev.Controls.Add(Me.btnDict)
+        Me.tabPRev.Controls.Add(Me.btnCheckSpell)
+        Me.tabPRev.Location = New System.Drawing.Point(4, 22)
+        Me.tabPRev.Name = "tabPRev"
+        Me.tabPRev.Size = New System.Drawing.Size(701, 47)
+        Me.tabPRev.TabIndex = 5
+        Me.tabPRev.Text = "Review"
+        Me.tabPRev.UseVisualStyleBackColor = True
+        '
+        'lblDict
+        '
+        Me.lblDict.AutoSize = True
+        Me.lblDict.Depth = 0
+        Me.lblDict.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.lblDict.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblDict.Location = New System.Drawing.Point(384, 13)
+        Me.lblDict.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lblDict.Name = "lblDict"
+        Me.lblDict.Size = New System.Drawing.Size(77, 19)
+        Me.lblDict.TabIndex = 27
+        Me.lblDict.Text = "Dictionary"
+        '
+        'btnAddToDict
+        '
+        Me.btnAddToDict.AutoSize = True
+        Me.btnAddToDict.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnAddToDict.Depth = 0
+        Me.btnAddToDict.Location = New System.Drawing.Point(234, 5)
+        Me.btnAddToDict.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnAddToDict.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnAddToDict.Name = "btnAddToDict"
+        Me.btnAddToDict.Primary = False
+        Me.btnAddToDict.Size = New System.Drawing.Size(143, 36)
+        Me.btnAddToDict.TabIndex = 26
+        Me.btnAddToDict.Text = "Add to Dictionary"
+        Me.btnAddToDict.UseVisualStyleBackColor = True
+        '
+        'btnDict
+        '
+        Me.btnDict.AutoSize = True
+        Me.btnDict.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnDict.Depth = 0
+        Me.btnDict.Location = New System.Drawing.Point(135, 5)
+        Me.btnDict.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnDict.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnDict.Name = "btnDict"
+        Me.btnDict.Primary = False
+        Me.btnDict.Size = New System.Drawing.Size(91, 36)
+        Me.btnDict.TabIndex = 25
+        Me.btnDict.Text = "Dictionary"
+        Me.btnDict.UseVisualStyleBackColor = True
+        '
+        'btnCheckSpell
+        '
+        Me.btnCheckSpell.AutoSize = True
+        Me.btnCheckSpell.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnCheckSpell.Depth = 0
+        Me.btnCheckSpell.Location = New System.Drawing.Point(5, 5)
+        Me.btnCheckSpell.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnCheckSpell.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnCheckSpell.Name = "btnCheckSpell"
+        Me.btnCheckSpell.Primary = False
+        Me.btnCheckSpell.Size = New System.Drawing.Size(122, 36)
+        Me.btnCheckSpell.TabIndex = 24
+        Me.btnCheckSpell.Text = "Check Spelling"
+        Me.btnCheckSpell.UseVisualStyleBackColor = True
+        '
+        'tabPPrint
+        '
+        Me.tabPPrint.Controls.Add(Me.MaterialLabel1)
+        Me.tabPPrint.Controls.Add(Me.btnPreview)
+        Me.tabPPrint.Controls.Add(Me.btnPrint)
+        Me.tabPPrint.Location = New System.Drawing.Point(4, 22)
+        Me.tabPPrint.Name = "tabPPrint"
+        Me.tabPPrint.Size = New System.Drawing.Size(701, 47)
+        Me.tabPPrint.TabIndex = 6
+        Me.tabPPrint.Text = "Printing"
+        Me.tabPPrint.UseVisualStyleBackColor = True
+        '
+        'MaterialLabel1
+        '
+        Me.MaterialLabel1.AutoSize = True
+        Me.MaterialLabel1.Depth = 0
+        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel1.Location = New System.Drawing.Point(207, 13)
+        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel1.Name = "MaterialLabel1"
+        Me.MaterialLabel1.Size = New System.Drawing.Size(484, 19)
+        Me.MaterialLabel1.TabIndex = 5
+        Me.MaterialLabel1.Text = "Unfortunately, printing isn't yet available in this version of Sword. Sorry!"
+        '
+        'btnPreview
+        '
+        Me.btnPreview.AutoSize = True
+        Me.btnPreview.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnPreview.Depth = 0
+        Me.btnPreview.Location = New System.Drawing.Point(88, 5)
+        Me.btnPreview.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnPreview.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnPreview.Name = "btnPreview"
+        Me.btnPreview.Primary = False
+        Me.btnPreview.Size = New System.Drawing.Size(112, 36)
+        Me.btnPreview.TabIndex = 4
+        Me.btnPreview.Text = "Print Preview"
+        Me.btnPreview.UseVisualStyleBackColor = True
+        '
+        'btnPrint
+        '
+        Me.btnPrint.Depth = 0
+        Me.btnPrint.Location = New System.Drawing.Point(7, 6)
+        Me.btnPrint.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Primary = True
+        Me.btnPrint.Size = New System.Drawing.Size(74, 35)
+        Me.btnPrint.TabIndex = 1
+        Me.btnPrint.Text = "Print"
+        Me.btnPrint.UseVisualStyleBackColor = True
+        '
+        'tabSelFile
+        '
+        Me.tabSelFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tabSelFile.BaseTabControl = Me.MaterialTabControl1
+        Me.tabSelFile.Depth = 0
+        Me.tabSelFile.Location = New System.Drawing.Point(0, 64)
+        Me.tabSelFile.MouseState = MaterialSkin.MouseState.HOVER
+        Me.tabSelFile.Name = "tabSelFile"
+        Me.tabSelFile.Size = New System.Drawing.Size(713, 23)
+        Me.tabSelFile.TabIndex = 16
+        Me.tabSelFile.Text = "File"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(613, 514)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(712, 514)
+        Me.Controls.Add(Me.tabSelFile)
         Me.Controls.Add(Me.tacNav)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.MaterialTabControl1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form2"
         Me.Text = "Form2"
@@ -888,15 +1475,24 @@ Partial Class Form2
         Me.tabReview.ResumeLayout(False)
         Me.tabReview.PerformLayout()
         Me.Panel1.ResumeLayout(False)
+        Me.MaterialTabControl1.ResumeLayout(False)
+        Me.tabPFile.ResumeLayout(False)
+        Me.tabPFile.PerformLayout()
+        Me.tabPHome.ResumeLayout(False)
+        Me.tabPHome.PerformLayout()
+        Me.tabPIns.ResumeLayout(False)
+        Me.tabPIns.PerformLayout()
+        Me.tabPSettings.ResumeLayout(False)
+        Me.tabPSettings.PerformLayout()
+        Me.tabPHelp.ResumeLayout(False)
+        Me.tabPHelp.PerformLayout()
+        Me.tabPRev.ResumeLayout(False)
+        Me.tabPRev.PerformLayout()
+        Me.tabPPrint.ResumeLayout(False)
+        Me.tabPPrint.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents tacNav As System.Windows.Forms.TabControl
     Friend WithEvents tabFile As System.Windows.Forms.TabPage
     Friend WithEvents Button34 As System.Windows.Forms.Button
@@ -925,7 +1521,6 @@ Partial Class Form2
     Friend WithEvents Button48 As System.Windows.Forms.Button
     Friend WithEvents Button49 As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents txtContent As System.Windows.Forms.RichTextBox
     Friend WithEvents SaveDialog As System.Windows.Forms.SaveFileDialog
     Friend WithEvents OpenDialog As System.Windows.Forms.OpenFileDialog
     Friend WithEvents PrintDialog As System.Windows.Forms.PrintDialog
@@ -953,4 +1548,49 @@ Partial Class Form2
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Button23 As System.Windows.Forms.Button
     Friend WithEvents Button24 As System.Windows.Forms.Button
+    Friend WithEvents txtContent As RichTextBox
+    Friend WithEvents MaterialTabControl1 As MaterialSkin.Controls.MaterialTabControl
+    Friend WithEvents tabPFile As TabPage
+    Friend WithEvents btnNew As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents tabPHome As TabPage
+    Friend WithEvents tabSelFile As MaterialSkin.Controls.MaterialTabSelector
+    Friend WithEvents tabPIns As TabPage
+    Friend WithEvents tabPHelp As TabPage
+    Friend WithEvents tabPRev As TabPage
+    Friend WithEvents btnSave As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnOpen As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnSaveAs As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnExport As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents tabPPrint As TabPage
+    Friend WithEvents btnPaste As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnUnderline As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnItalics As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnBold As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnFont As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnCopy As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnCut As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnFind As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnReplace As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnRight As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnCenter As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnLeft As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnHighlight As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnColour As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnStrikeout As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents btnList As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnWebImg As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnImg As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnTable As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnComment As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnBreak As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnEULA As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents lblDict As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents btnAddToDict As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnDict As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnCheckSpell As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents btnPreview As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents btnPrint As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents tabPSettings As TabPage
+    Friend WithEvents chkIndent As MaterialSkin.Controls.MaterialCheckBox
 End Class

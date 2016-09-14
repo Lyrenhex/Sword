@@ -78,7 +78,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>twd5.ico</ApplicationIcon>
@@ -87,15 +87,19 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>swordKey.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>Internet</TargetZone>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="NHunspell">
       <HintPath>..\packages\NHunspell.1.2.5554.16953\lib\net\NHunspell.dll</HintPath>
     </Reference>
@@ -123,16 +127,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dark %28old%29.Designer.vb">
+      <DependentUpon>Dark %28old%29.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dark %28old%29.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
     <Compile Include="Form2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReg.Designer.vb">
-      <DependentUpon>frmReg.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmReg.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSpellCheck.Designer.vb">
@@ -151,13 +155,6 @@
       <DependentUpon>find.vb</DependentUpon>
     </Compile>
     <Compile Include="find.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -183,11 +180,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Dark %28old%29.resx">
+      <DependentUpon>Dark %28old%29.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReg.resx">
-      <DependentUpon>frmReg.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSpellCheck.resx">
       <DependentUpon>frmSpellCheck.vb</DependentUpon>
@@ -197,9 +194,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="find.resx">
       <DependentUpon>find.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -282,18 +276,11 @@
     <Content Include="sv_SE.dic">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Sword Word Processor_TemporaryKey.pfx" />
-    <None Include="swordKey.snk" />
-    <None Include="swordPub.snk" />
-    <None Include="Tword Word Processor_TemporaryKey.pfx" />
     <Content Include="twd.ico" />
     <Content Include="twd2.ico" />
     <Content Include="twd3.ico" />
     <Content Include="twd4.ico" />
     <Content Include="twd5.ico" />
-    <Content Include="welcome.twd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Hunspellx64.dll">
