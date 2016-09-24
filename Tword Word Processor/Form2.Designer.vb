@@ -948,7 +948,7 @@ Partial Class Form2
         Me.tabPHome.Location = New System.Drawing.Point(4, 22)
         Me.tabPHome.Name = "tabPHome"
         Me.tabPHome.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabPHome.Size = New System.Drawing.Size(701, 47)
+        Me.tabPHome.Size = New System.Drawing.Size(697, 47)
         Me.tabPHome.TabIndex = 1
         Me.tabPHome.Text = "Home"
         Me.tabPHome.UseVisualStyleBackColor = True
@@ -1181,7 +1181,7 @@ Partial Class Form2
         Me.tabPIns.Controls.Add(Me.btnTable)
         Me.tabPIns.Location = New System.Drawing.Point(4, 22)
         Me.tabPIns.Name = "tabPIns"
-        Me.tabPIns.Size = New System.Drawing.Size(701, 47)
+        Me.tabPIns.Size = New System.Drawing.Size(697, 47)
         Me.tabPIns.TabIndex = 2
         Me.tabPIns.Text = "Insert"
         Me.tabPIns.UseVisualStyleBackColor = True
@@ -1266,7 +1266,7 @@ Partial Class Form2
         Me.tabPSettings.Controls.Add(Me.chkIndent)
         Me.tabPSettings.Location = New System.Drawing.Point(4, 22)
         Me.tabPSettings.Name = "tabPSettings"
-        Me.tabPSettings.Size = New System.Drawing.Size(701, 47)
+        Me.tabPSettings.Size = New System.Drawing.Size(697, 47)
         Me.tabPSettings.TabIndex = 3
         Me.tabPSettings.Text = "Settings"
         Me.tabPSettings.UseVisualStyleBackColor = True
@@ -1295,7 +1295,7 @@ Partial Class Form2
         Me.tabPHelp.Controls.Add(Me.btnEULA)
         Me.tabPHelp.Location = New System.Drawing.Point(4, 22)
         Me.tabPHelp.Name = "tabPHelp"
-        Me.tabPHelp.Size = New System.Drawing.Size(701, 47)
+        Me.tabPHelp.Size = New System.Drawing.Size(697, 47)
         Me.tabPHelp.TabIndex = 4
         Me.tabPHelp.Text = "Help"
         Me.tabPHelp.UseVisualStyleBackColor = True
@@ -1323,7 +1323,7 @@ Partial Class Form2
         Me.tabPRev.Controls.Add(Me.btnCheckSpell)
         Me.tabPRev.Location = New System.Drawing.Point(4, 22)
         Me.tabPRev.Name = "tabPRev"
-        Me.tabPRev.Size = New System.Drawing.Size(701, 47)
+        Me.tabPRev.Size = New System.Drawing.Size(697, 47)
         Me.tabPRev.TabIndex = 5
         Me.tabPRev.Text = "Review"
         Me.tabPRev.UseVisualStyleBackColor = True
@@ -1393,7 +1393,7 @@ Partial Class Form2
         Me.tabPPrint.Controls.Add(Me.btnPrint)
         Me.tabPPrint.Location = New System.Drawing.Point(4, 22)
         Me.tabPPrint.Name = "tabPPrint"
-        Me.tabPPrint.Size = New System.Drawing.Size(701, 47)
+        Me.tabPPrint.Size = New System.Drawing.Size(697, 47)
         Me.tabPPrint.TabIndex = 6
         Me.tabPPrint.Text = "Printing"
         Me.tabPPrint.UseVisualStyleBackColor = True

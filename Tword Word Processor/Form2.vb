@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports System.Text.RegularExpressions
+Imports System.Drawing.Printing
 Imports NHunspell
 Imports MaterialSkin
 
@@ -60,6 +61,7 @@ ByVal filename As String)
             SaveDialog.FileName = fileToOpen
         End If
         txtContent.EnableAutoDragDrop = True
+        txtContent.SpellCheck.IsEnabled = True
 
         chkIndent.Checked = My.Settings.Indents
     End Sub
@@ -387,5 +389,18 @@ ByVal filename As String)
 
     Private Sub chkIndent_Click(sender As Object, e As EventArgs) Handles chkIndent.Click
         My.Settings.Indents = chkIndent.Checked
+    End Sub
+
+    Private Sub btnPreview_Click(sender As Object, e As EventArgs) Handles btnPreview.Click
+        PPDialog.Document = PrintDoc
+        PPDialog.ShowDialog()
+    End Sub
+
+    Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+        Dim pd As New PrintDialog()
+        If (pd.ShowDialog() = True) Then
+            'use either one of the below      
+            pd.PrintDocument(((CType(txtContent.Document, IDocumentPaginatorSource)).DocumentPaginator), "printing as paginator")
+        End If
     End Sub
 End Class
